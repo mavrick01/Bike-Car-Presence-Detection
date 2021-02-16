@@ -8,3 +8,5 @@ I've added in my automation as I've not wanted it to open the garagedoor unless 
 Dr ZZZs does a video with open and closing garage door. As we only exit from the main garage door and can control it from the phone, we avoid having timing issues with the door closing. I am thinking of using a motion sensor to detect if someone is in the garage before closing, but not got there yet.
 
 This is Dr ZZZ's video: https://www.youtube.com/watch?v=1DyblwsjfU8&t=296s
+
+On a side note, I used a basic ESP12 chip on an adaptor board (with a 
