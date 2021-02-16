@@ -1,0 +1,23 @@
+alias: Open Garage Door when the VStrom arrives home
+description: ''
+trigger:
+  - platform: state
+    entity_id: binary_sensor.vstrompresence
+    from: 'off'
+    to: 'on'
+condition:
+# As the Garage Door runs on a momentary switch, I don't want it to open the garage door unless it is closed (else it will open it)
+  - condition: state
+    entity_id: cover.garage
+    state: closed
+# I check that the bike has been running for 10 minutes before I open the door. This allows me to take the bike out then start it up after I've closed the garage door
+  - condition: numeric_state
+    entity_id: sensor.vstrompresence_uptime
+    above: '600000'
+action:
+  - service: cover.open_cover
+    data:
+      entity_id: cover.garagedr
+    entity_id: cover.garage
+mode: single
+
