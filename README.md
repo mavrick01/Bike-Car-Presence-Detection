@@ -12,5 +12,5 @@ This is based on Dr ZZs's video: https://www.youtube.com/watch?v=1DyblwsjfU8&t=2
 On a side note, I used a basic ESP12 chip on an adaptor board (with a ht7333 voltage regulator - that can take up to 15V, so should work on the bike). I was tearing my hair out with it constantly rebooting. Added a 100uF capacitor across the GND and ESP VCC and it all works perfectly. I am planning to replace this with a Tantalum capacitor - as the Electrolytic capacitor is too big.
 
 Here are some photos of the board and the cover I created:
-<img src="ESP Front.png" alt="ESP Front" width="128" height="128">
-<img src="ESP Back.png" alt="ESP Back" style="width:128px;height:128px;">
+<img src="ESP Front.png" alt="ESP Front" width="50" height="100">
+<img src="ESP Back.png" alt="ESP Back" style="width:50px;height:100px;">
